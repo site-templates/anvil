@@ -1,0 +1,39 @@
+# The visual editor's contract for layouts/post.blade.php.
+# A post's own values come from resources/data/collections/posts.json; these
+# fields cover the chrome around it.
+title: Post layout
+description: The chrome around one post — back link, header, article, and the two that follow
+fields:
+    title:
+        type: text
+        label: Title
+        default: ""
+    description:
+        type: textarea
+        label: Standfirst
+        rows: 3
+        default: ""
+    tag:
+        type: text
+        label: Tag
+        default: ""
+    dateFormatted:
+        type: text
+        label: Date
+        default: ""
+    readTime:
+        type: text
+        label: Read time
+        default: ""
+    backText:
+        type: text
+        label: Back link text
+        default: "All writing"
+    backLink:
+        type: url
+        label: Back link
+        default: "/blog"
+    moreHeading:
+        type: text
+        label: More heading
+        default: "Next"

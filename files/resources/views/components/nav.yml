@@ -1,0 +1,38 @@
+# The visual editor's contract for nav.blade.php.
+# The page links come from resources/data/site.json (nav_links), so editing
+# them here changes every page at once.
+title: Header
+description: The mark, the floating white link pill, and the demo button
+fields:
+    brand:
+        type: text
+        label: Wordmark
+        default: "Anvil"
+    ctaText:
+        type: text
+        label: Button text
+        default: "Book a demo"
+    ctaLink:
+        type: url
+        label: Button link
+        default: "/plans"
+    current:
+        type: text
+        label: Current page path
+        description: Set by each page — the matching link reads as current.
+        default: "/"
+    links:
+        type: repeater
+        label: Page links
+        add_button_label: "Add link"
+        item_label: text
+        source: site.nav_links
+        sub_fields:
+            text:
+                type: text
+                label: Label
+                default: "New link"
+            url:
+                type: url
+                label: Link
+                default: "/"

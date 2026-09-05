@@ -1,0 +1,62 @@
+title: Platform row
+description: One stage of the platform — argument and checklist on one side, a spec panel on the other
+fields:
+    id:
+        type: text
+        label: Anchor
+        description: Used by links like /platform#read.
+        default: ""
+    heading:
+        type: text
+        label: Heading
+        default: "Section"
+    body:
+        type: textarea
+        label: Paragraph
+        rows: 4
+        default: ""
+    flip:
+        type: toggle
+        label: Panel on the left
+        default: "0"
+    band:
+        type: select
+        label: Background
+        default: "canvas"
+        options:
+            canvas: Canvas
+            mist: Mist
+    panelTitle:
+        type: text
+        label: Panel title
+        default: "Detail"
+    panelMeta:
+        type: text
+        label: Panel meta
+        default: ""
+    items:
+        type: repeater
+        label: Checklist
+        source: collections.readChecks
+        add_button_label: "Add line"
+        item_label: text
+        sub_fields:
+            text:
+                type: text
+                label: Line
+                default: "New line"
+    rows:
+        type: repeater
+        label: Panel rows
+        source: collections.readSpec
+        add_button_label: "Add row"
+        item_label: term
+        sub_fields:
+            term:
+                type: text
+                label: Term
+                default: "Term"
+            detail:
+                type: text
+                label: Detail
+                default: "Detail"

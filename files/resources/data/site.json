@@ -1,0 +1,139 @@
+{
+    "name": "Anvil",
+    "nav_links": [
+        {
+            "text": "Platform",
+            "url": "/platform"
+        },
+        {
+            "text": "Use cases",
+            "url": "/use-cases"
+        },
+        {
+            "text": "Plans",
+            "url": "/plans"
+        },
+        {
+            "text": "Blog",
+            "url": "/blog"
+        }
+    ],
+    "social_links": [
+        {
+            "label": "X",
+            "platform": "x",
+            "url": "#"
+        },
+        {
+            "label": "LinkedIn",
+            "platform": "linkedin",
+            "url": "#"
+        },
+        {
+            "label": "YouTube",
+            "platform": "youtube",
+            "url": "#"
+        }
+    ],
+    "address_lines": [
+        {
+            "text": "1 Foundry Row, Level 4"
+        },
+        {
+            "text": "Sheffield S1 2GU"
+        },
+        {
+            "text": "United Kingdom"
+        }
+    ],
+    "footer_columns": [
+        {
+            "text": "Platform",
+            "url": "/platform",
+            "children": [
+                {
+                    "text": "How it works",
+                    "url": "/platform"
+                },
+                {
+                    "text": "Reading",
+                    "url": "/platform#read"
+                },
+                {
+                    "text": "Deciding",
+                    "url": "/platform#decide"
+                },
+                {
+                    "text": "Executing",
+                    "url": "/platform#execute"
+                }
+            ]
+        },
+        {
+            "text": "Work",
+            "url": "/use-cases",
+            "children": [
+                {
+                    "text": "Use cases",
+                    "url": "/use-cases"
+                },
+                {
+                    "text": "Month-end close",
+                    "url": "/use-case/month-end-close"
+                },
+                {
+                    "text": "Invoice matching",
+                    "url": "/use-case/invoice-matching"
+                },
+                {
+                    "text": "Access reviews",
+                    "url": "/use-case/access-reviews"
+                }
+            ]
+        },
+        {
+            "text": "Company",
+            "url": "/blog",
+            "children": [
+                {
+                    "text": "Blog",
+                    "url": "/blog"
+                },
+                {
+                    "text": "Plans",
+                    "url": "/plans"
+                },
+                {
+                    "text": "Security",
+                    "url": "/platform#execute"
+                },
+                {
+                    "text": "Careers",
+                    "url": "/blog"
+                }
+            ]
+        },
+        {
+            "text": "Contact",
+            "url": "/plans",
+            "children": [
+                {
+                    "text": "Book a demo",
+                    "url": "/plans"
+                },
+                {
+                    "text": "Talk to an engineer",
+                    "url": "mailto:hello@anvil.example"
+                },
+                {
+                    "text": "Support",
+                    "url": "mailto:hello@anvil.example"
+                },
+                {
+                    "text": "Status",
+                    "url": "/blog"
+                }
+            ]
+        }
+    ]
+}

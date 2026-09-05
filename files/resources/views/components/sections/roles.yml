@@ -1,0 +1,35 @@
+title: Departments
+description: Hairline rows — a department, the work it hands over, and the figure that changed
+fields:
+    heading:
+        type: text
+        label: Headline
+        default: "Every department runs on the same 30%."
+    body:
+        type: textarea
+        label: Paragraph
+        rows: 3
+        default: "Configuration, reporting, compliance, close. The work your platform never shipped out of the box and your team does by hand."
+    items:
+        type: repeater
+        label: Departments
+        add_button_label: "Add department"
+        item_label: name
+        source: collections.roles
+        sub_fields:
+            name:
+                type: text
+                label: Department
+                default: "New department"
+            body:
+                type: text
+                label: One line
+                default: "What the agents take off their desk."
+            metric:
+                type: text
+                label: Figure
+                default: "0 hrs saved"
+            link:
+                type: url
+                label: Link
+                default: "/use-cases"

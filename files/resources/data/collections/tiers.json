@@ -1,0 +1,41 @@
+[
+    {
+        "name": "Pilot",
+        "badge": "",
+        "price": "\u00a36k",
+        "period": "per month, one run",
+        "body": "One workflow, one tenant, one engineer. Cancel at the end of any month.",
+        "lineOne": "One run, live in 14 days",
+        "lineTwo": "Sandbox parallel period",
+        "lineThree": "Ledger and reversible writes",
+        "emphasis": "0",
+        "ctaText": "Start a pilot",
+        "ctaLink": "mailto:hello@anvil.example"
+    },
+    {
+        "name": "Programme",
+        "badge": "Most chosen",
+        "price": "\u00a319k",
+        "period": "per month, four runs",
+        "body": "Four runs across two departments, with a named implementation engineer on the account.",
+        "lineOne": "Four runs, one added per quarter",
+        "lineTwo": "Named implementation engineer",
+        "lineThree": "Exception routing into your ITSM",
+        "emphasis": "1",
+        "ctaText": "Book a demo",
+        "ctaLink": "mailto:hello@anvil.example"
+    },
+    {
+        "name": "Estate",
+        "badge": "",
+        "price": "Custom",
+        "period": "annual, unlimited runs",
+        "body": "Every department, every entity, with our engineers embedded alongside yours.",
+        "lineOne": "Unlimited runs and entities",
+        "lineTwo": "Private model deployment",
+        "lineThree": "Quarterly audit pack and review",
+        "emphasis": "0",
+        "ctaText": "Talk to us",
+        "ctaLink": "mailto:hello@anvil.example"
+    }
+]

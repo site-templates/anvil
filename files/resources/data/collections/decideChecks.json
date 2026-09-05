@@ -1,0 +1,14 @@
+[
+    {
+        "text": "Your close checklist, approval matrix and materiality thresholds"
+    },
+    {
+        "text": "Rules are versioned; the ledger records which version ran"
+    },
+    {
+        "text": "Anything outside them becomes an exception with its reasoning"
+    },
+    {
+        "text": "No silent judgement calls on materiality or policy"
+    }
+]

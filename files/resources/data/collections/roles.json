@@ -1,0 +1,7 @@
+[
+    { "name": "Accounting", "body": "Month-end close, accruals, intercompany, and the reconciliations nobody volunteers for.", "metric": "9 days → 4 hrs", "link": "/use-case/month-end-close" },
+    { "name": "Procurement", "body": "Three-way matching, duplicate detection, and contract terms checked against the invoice.", "metric": "£1.2m held", "link": "/use-case/invoice-matching" },
+    { "name": "IT", "body": "Access reviews, joiner and leaver runs, and the quarterly attestation pack.", "metric": "2,400 accounts", "link": "/use-case/access-reviews" },
+    { "name": "Human resources", "body": "Policy answers, benefits changes, and onboarding tasks filed against the right records.", "metric": "71% self-served", "link": "/use-case/onboarding-runs" },
+    { "name": "Finance", "body": "Variance packs, flux commentary, and the reporting hierarchy kept honest after a reorg.", "metric": "6 entities", "link": "/use-case/variance-packs" }
+]

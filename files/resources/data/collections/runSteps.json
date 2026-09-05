@@ -1,0 +1,7 @@
+[
+    { "at": "00:00", "text": "Signed in to the finance tenant", "detail": "Service account · scoped to AP" },
+    { "at": "00:04", "text": "Read 1,284 open items across 6 entities", "detail": "No writes yet" },
+    { "at": "00:21", "text": "Applied the close checklist", "detail": "41 entries matched, 3 exceptions raised" },
+    { "at": "01:06", "text": "Posted 41 journal entries", "detail": "Batch JE-08-4118 · reversible" },
+    { "at": "01:09", "text": "Raised 3 exceptions for review", "detail": "Sent to the controller queue" }
+]

@@ -1,0 +1,79 @@
+title: Plans
+description: Three plan cards, the recommended one carrying the filled button, above the shared list of what every plan includes
+fields:
+    heading:
+        type: text
+        label: Headline
+        default: "Priced per run, not per seat."
+    body:
+        type: textarea
+        label: Paragraph
+        rows: 3
+        default: "A run is one workflow, live in your tenant, with as many people watching it as you like. Add the second when the first has paid for itself."
+    includedLabel:
+        type: text
+        label: Shared list heading
+        default: "Every plan includes"
+    items:
+        type: repeater
+        label: Plans
+        add_button_label: "Add plan"
+        item_label: name
+        source: collections.tiers
+        sub_fields:
+            name:
+                type: text
+                label: Plan name
+                default: "New plan"
+            badge:
+                type: text
+                label: Corner note
+                default: ""
+            price:
+                type: text
+                label: Price
+                default: "£0"
+            period:
+                type: text
+                label: Price caption
+                default: "per run, per month"
+            body:
+                type: textarea
+                label: Description
+                rows: 3
+                default: "Who this plan is for."
+            lineOne:
+                type: text
+                label: Feature 1
+                default: "First feature"
+            lineTwo:
+                type: text
+                label: Feature 2
+                default: "Second feature"
+            lineThree:
+                type: text
+                label: Feature 3
+                default: "Third feature"
+            emphasis:
+                type: toggle
+                label: Recommended
+                default: "0"
+            ctaText:
+                type: text
+                label: Button text
+                default: "Book a demo"
+            ctaLink:
+                type: url
+                label: Button link
+                default: "#"
+    included:
+        type: repeater
+        label: Included in every plan
+        add_button_label: "Add line"
+        item_label: text
+        source: collections.included
+        sub_fields:
+            text:
+                type: text
+                label: Line
+                default: "New line"

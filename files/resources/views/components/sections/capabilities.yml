@@ -1,0 +1,31 @@
+title: Capabilities
+description: Three description-list entries, each with a drawn block mark — what the agent reads, decides and executes
+fields:
+    heading:
+        type: text
+        label: Headline
+        default: "Three things it does, and nothing it does not."
+    items:
+        type: repeater
+        label: Capabilities
+        add_button_label: "Add capability"
+        item_label: title
+        source: collections.capabilities
+        sub_fields:
+            mark:
+                type: select
+                label: Mark
+                default: "read"
+                options:
+                    read: Stacked bars
+                    decide: Branching wedge
+                    execute: Struck block
+            title:
+                type: text
+                label: Term
+                default: "New capability"
+            body:
+                type: textarea
+                label: Detail
+                rows: 4
+                default: "What this part of the agent actually does."

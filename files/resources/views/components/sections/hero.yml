@@ -1,0 +1,45 @@
+title: Hero
+description: The four-line display headline, the two buttons, and the mark taken apart into three labelled stages
+fields:
+    heading:
+        type: text
+        label: Headline
+        default: "Agents that finish the ticket. Not suggest a fix."
+    body:
+        type: textarea
+        label: Opening paragraph
+        rows: 3
+        default: "Anvil runs agents inside the systems your back office already uses. They read the real record, decide against your rules, and execute with a human on the approval."
+    ctaText:
+        type: text
+        label: Button text
+        default: "Book a demo"
+    ctaLink:
+        type: url
+        label: Button link
+        default: "/plans"
+    secondaryText:
+        type: text
+        label: Second button text
+        default: "See the work"
+    secondaryLink:
+        type: url
+        label: Second button link
+        default: "/use-cases"
+    stageOne:
+        type: text
+        label: Diagram stage 1
+        default: "Read"
+    stageTwo:
+        type: text
+        label: Diagram stage 2
+        default: "Decide"
+    stageThree:
+        type: text
+        label: Diagram stage 3
+        default: "Execute"
+    meta:
+        type: text
+        label: Proof line
+        description: The small monospace line under the buttons.
+        default: "Live in 14 days · Runs in your tenant · Every action logged"

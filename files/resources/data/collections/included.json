@@ -1,0 +1,20 @@
+[
+    {
+        "text": "The append-only ledger, exportable"
+    },
+    {
+        "text": "Reversible batch writes for 30 days"
+    },
+    {
+        "text": "Runs inside your own tenant and region"
+    },
+    {
+        "text": "Scoped service accounts, per run"
+    },
+    {
+        "text": "A named implementation engineer"
+    },
+    {
+        "text": "Exception routing to a human queue"
+    }
+]

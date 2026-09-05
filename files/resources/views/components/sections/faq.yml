@@ -1,0 +1,23 @@
+title: Questions
+description: Native disclosures on the mist band, opening without script
+fields:
+    heading:
+        type: text
+        label: Headline
+        default: "The questions procurement asks."
+    items:
+        type: repeater
+        label: Questions
+        add_button_label: "Add question"
+        item_label: question
+        source: collections.faq
+        sub_fields:
+            question:
+                type: text
+                label: Question
+                default: "New question"
+            answer:
+                type: textarea
+                label: Answer
+                rows: 4
+                default: "The answer."

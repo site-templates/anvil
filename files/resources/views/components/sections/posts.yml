@@ -1,0 +1,35 @@
+title: Writing index
+description: Hairline rows listing every post — tag, date, title and standfirst
+fields:
+    items:
+        type: repeater
+        label: Posts
+        add_button_label: "Add post"
+        item_label: title
+        source: collections.posts
+        sub_fields:
+            tag:
+                type: text
+                label: Tag
+                default: "Field notes"
+            dateFormatted:
+                type: text
+                label: Date
+                default: "1 January 2026"
+            readTime:
+                type: text
+                label: Read time
+                default: "4 min read"
+            title:
+                type: text
+                label: Title
+                default: "New post"
+            description:
+                type: textarea
+                label: Standfirst
+                rows: 3
+                default: "What the post is about."
+            link:
+                type: url
+                label: Link
+                default: "/blog"

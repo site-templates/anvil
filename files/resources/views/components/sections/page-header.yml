@@ -1,0 +1,17 @@
+title: Page header
+description: The display heading, paragraph and monospace fact line that open an inner page
+fields:
+    heading:
+        type: text
+        label: Heading
+        default: "Page"
+    body:
+        type: textarea
+        label: Paragraph
+        rows: 3
+        default: ""
+    meta:
+        type: text
+        label: Fact line
+        description: The small monospace line underneath.
+        default: ""

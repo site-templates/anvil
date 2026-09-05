@@ -1,0 +1,42 @@
+[
+    {
+        "slug": "what-the-30-percent-is",
+        "title": "The 30% your platform never shipped",
+        "link": "/blog/what-the-30-percent-is",
+        "tag": "Field notes",
+        "dateFormatted": "14 August 2026",
+        "readTime": "6 min read",
+        "description": "Every ERP covers roughly seventy per cent of what a business needs. The rest is systems engineering, and it is where the money goes.",
+        "content": "<p>Ask any implementation partner what a platform covers out of the box and you will get roughly the same number: seventy per cent. The remaining thirty is configuration, integration, reporting and exception handling \u2014 and it is where the second, larger budget goes.</p><h2>Why it never closes</h2><p>The thirty per cent is not a backlog. It is the shape of the business: the entity structure, the approval matrix, the way this company recognises revenue, the four exceptions the finance team carries in their heads. A vendor cannot ship it because it is not general.</p><h2>What changed</h2><p>What changed is not that AI can now write the configuration. It is that it can operate the systems: log in, read the record, apply the rule, execute, and leave a trail an auditor accepts. The thirty per cent stops being a project and becomes a run.</p>"
+    },
+    {
+        "slug": "agents-that-write",
+        "title": "An agent that reads is a report. An agent that writes is a colleague",
+        "link": "/blog/agents-that-write",
+        "tag": "Product",
+        "dateFormatted": "29 July 2026",
+        "readTime": "5 min read",
+        "description": "Read-only agents are safe, useful and stop exactly where the work begins. Here is how we made writing safe instead.",
+        "content": "<p>Almost every enterprise AI deployment stops at read. It is the responsible place to stop, and it is also the place where the value stops.</p><h2>Four properties</h2><p>A write is safe when it is scoped, reversible, attributable and approved. Anvil will not perform one unless all four hold.</p><ul><li><strong>Scoped</strong> \u2014 the service account can touch the objects the run declares and nothing else</li><li><strong>Reversible</strong> \u2014 every write is posted as a batch that can be reversed as a batch</li><li><strong>Attributable</strong> \u2014 the ledger records the rule, the inputs and the version of both</li><li><strong>Approved</strong> \u2014 a named human holds the last step</li></ul><h2>The uncomfortable part</h2><p>Approval is a queue, and queues rot. So the approval is small: one screen, the diff, the rule, the exception. If approving takes longer than doing it by hand, nobody will, and the agent is worthless.</p>"
+    },
+    {
+        "slug": "two-weeks-not-two-quarters",
+        "title": "Two weeks, not two quarters",
+        "link": "/blog/two-weeks-not-two-quarters",
+        "tag": "Implementation",
+        "dateFormatted": "2 July 2026",
+        "readTime": "4 min read",
+        "description": "What actually happens in the fourteen days between signing and the first live run.",
+        "content": "<p>Enterprise software is sold in quarters because it is implemented in quarters. Ours is not, and the reason is unglamorous: we do not ask you to change anything.</p><h2>Week one</h2><p>We connect to a sandbox copy of your tenant with a read-only service account and run against a period you have already closed. You compare our ledger to what your team actually did. This is the week where we are wrong in front of you.</p><h2>Week two</h2><p>The run goes live in parallel. It proposes; your team disposes. At the end of the week you decide which steps it may execute directly and which stay proposal-only. Most customers start with two.</p><h2>After</h2><p>A new run every quarter, chosen by whichever workflow is costing you the most hands.</p>"
+    },
+    {
+        "slug": "the-ledger-is-the-product",
+        "title": "The ledger is the product",
+        "link": "/blog/the-ledger-is-the-product",
+        "tag": "Product",
+        "dateFormatted": "11 June 2026",
+        "readTime": "3 min read",
+        "description": "We spent longer on the record of what the agent did than on the agent.",
+        "content": "<p>The first version of Anvil had a chat interface and a spinner. It worked, and nobody trusted it, because nobody could see what it had done.</p><h2>What we built instead</h2><p>One append-only ledger. Every read, every decision, every write, with the rule version and the approver. It is the first screen, not a settings page, and it is the thing customers show their auditors.</p><p>The agent is replaceable. Models change every few months. The record of what happened in your systems is not.</p>"
+    }
+]

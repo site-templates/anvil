@@ -1,0 +1,56 @@
+title: Introducing
+description: The product introduction — copy beside a drawn run panel showing one agent run step by step
+fields:
+    heading:
+        type: text
+        label: Headline
+        default: "Meet Anvil"
+    body:
+        type: textarea
+        label: First paragraph
+        rows: 4
+        default: "Anvil connects to your systems of record through their own APIs, reads live data, applies the rules your team already follows, and executes the transaction with a named human on the approval. It logs in, does the work, and hands back a record of what changed."
+    note:
+        type: textarea
+        label: Second paragraph
+        rows: 3
+        default: "It learns the shape of your month. Every close, every reconciliation, every exception makes the next run shorter."
+    ctaText:
+        type: text
+        label: Button text
+        default: "Read how it works"
+    ctaLink:
+        type: url
+        label: Button link
+        default: "/platform"
+    runTitle:
+        type: text
+        label: Panel title
+        default: "Close AP · Period 08"
+    runMeta:
+        type: text
+        label: Panel meta
+        default: "Run 4,118"
+    approval:
+        type: text
+        label: Panel footer
+        default: "Waiting on approval · Priya Kaur, Financial Controller"
+    steps:
+        type: repeater
+        label: Run steps
+        add_button_label: "Add step"
+        item_label: text
+        source: collections.runSteps
+        sub_fields:
+            at:
+                type: text
+                label: Time
+                default: "00:00"
+            text:
+                type: text
+                label: Step
+                default: "New step"
+            detail:
+                type: text
+                label: Detail
+                default: "Detail"

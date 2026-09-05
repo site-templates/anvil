@@ -1,0 +1,18 @@
+[
+    {
+        "term": "Writes",
+        "detail": "Batched and reversible for 30 days"
+    },
+    {
+        "term": "Approval",
+        "detail": "Named human, single screen"
+    },
+    {
+        "term": "Audit",
+        "detail": "Append-only ledger, exportable"
+    },
+    {
+        "term": "Rollback",
+        "detail": "By batch, from the ledger"
+    }
+]

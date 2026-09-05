@@ -1,0 +1,63 @@
+title: Run library
+description: A white block whose rail of use-case cards breaks the container and scrolls sideways
+fields:
+    heading:
+        type: text
+        label: Headline
+        default: "The library of runs."
+    body:
+        type: textarea
+        label: Paragraph
+        rows: 3
+        default: "Every agent starts from a run that already exists — written by the engineers who implemented these systems for twenty years. Pick one, point it at your tenant, watch it work."
+    linkText:
+        type: text
+        label: Button text
+        default: "Browse every run"
+    linkUrl:
+        type: url
+        label: Button link
+        default: "/use-cases"
+    items:
+        type: repeater
+        label: Runs
+        add_button_label: "Add run"
+        item_label: title
+        source: collections.useCases
+        sub_fields:
+            system:
+                type: text
+                label: System
+                default: "ERP"
+            metric:
+                type: text
+                label: Headline figure
+                default: "4 hrs"
+            metricWas:
+                type: text
+                label: Figure caption
+                default: "was 9 days"
+            title:
+                type: text
+                label: Title
+                default: "New run"
+            blurb:
+                type: textarea
+                label: Summary
+                rows: 3
+                default: "What this run does, in one or two sentences."
+            tone:
+                type: select
+                label: Card tone
+                default: "mist"
+                options:
+                    mist: Mist
+                    mint: Mint
+            linkText:
+                type: text
+                label: Link text
+                default: "Read the run"
+            link:
+                type: url
+                label: Link
+                default: "/use-cases"

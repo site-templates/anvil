@@ -1,0 +1,26 @@
+[
+    {
+        "question": "Where does it run?",
+        "answer": "Inside your tenant, in your region. Anvil connects out to your systems through their own APIs with a scoped service account; nothing about your records is copied into a warehouse of ours."
+    },
+    {
+        "question": "What happens when it gets something wrong?",
+        "answer": "Writes are posted as batches and reversed as batches, for thirty days. The ledger records the rule version, the inputs and the approver, so the reversal is a decision rather than an investigation."
+    },
+    {
+        "question": "Does it need us to change our ERP?",
+        "answer": "No. Anvil operates the system you have, using the configuration you have. If a process only exists in someone's head, that is the week of work \u2014 writing it down, not migrating anything."
+    },
+    {
+        "question": "Who approves the work?",
+        "answer": "A named person you nominate per run. Approval is a single screen: the diff, the rule that produced it, and any exception. If approving takes longer than doing the task by hand, we have built it wrong."
+    },
+    {
+        "question": "How is it priced?",
+        "answer": "Per run, per month. A run is one workflow live in your tenant, with unlimited people watching it. Seats are free because watching the ledger should never cost anything."
+    },
+    {
+        "question": "What do the auditors get?",
+        "answer": "An exportable, append-only record of every read, decision, write and approval, with timestamps taken from your systems rather than from an email thread."
+    }
+]

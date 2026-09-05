@@ -1,0 +1,27 @@
+title: Systems
+description: A grid of black tiles carrying the platforms the agents operate inside
+fields:
+    heading:
+        type: text
+        label: Headline
+        default: "It already speaks to what you run."
+    body:
+        type: textarea
+        label: Paragraph
+        rows: 3
+        default: "Twenty years of implementation work, encoded as agents that operate inside your system of record instead of politely integrating with it."
+    items:
+        type: repeater
+        label: Systems
+        add_button_label: "Add system"
+        item_label: name
+        source: collections.systems
+        sub_fields:
+            name:
+                type: text
+                label: Name
+                default: "System"
+            image:
+                type: image
+                label: Logo
+                default: "https://assets.ui.sh/logos/relay.svg?color=%23ffffff"

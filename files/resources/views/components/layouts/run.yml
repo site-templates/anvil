@@ -1,0 +1,47 @@
+# The visual editor's contract for layouts/run.blade.php.
+# A run's own values come from resources/data/collections/useCases.json;
+# these fields cover the chrome around it.
+title: Run layout
+description: The chrome around one run — back link, figure, fact strip, write-up, and the other runs
+fields:
+    title:
+        type: text
+        label: Title
+        default: ""
+    description:
+        type: textarea
+        label: Summary
+        rows: 3
+        default: ""
+    system:
+        type: text
+        label: System
+        default: ""
+    metric:
+        type: text
+        label: Figure
+        default: ""
+    metricWas:
+        type: text
+        label: Figure caption
+        default: ""
+    owner:
+        type: text
+        label: Owner
+        default: ""
+    runtime:
+        type: text
+        label: Cadence
+        default: ""
+    backText:
+        type: text
+        label: Back link text
+        default: "All runs"
+    backLink:
+        type: url
+        label: Back link
+        default: "/use-cases"
+    moreHeading:
+        type: text
+        label: More heading
+        default: "Other runs"

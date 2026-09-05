@@ -1,0 +1,14 @@
+[
+    {
+        "text": "Reads through each system's own API, with a scoped service account"
+    },
+    {
+        "text": "No warehouse copy, no nightly extract, no stale balance"
+    },
+    {
+        "text": "Entity structure, approval matrix and thresholds read from the source"
+    },
+    {
+        "text": "Every read is logged against the run that asked for it"
+    }
+]

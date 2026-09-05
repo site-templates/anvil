@@ -1,0 +1,18 @@
+[
+    {
+        "term": "Connection",
+        "detail": "Native API, OAuth service account"
+    },
+    {
+        "term": "Scope",
+        "detail": "Declared per run, enforced per call"
+    },
+    {
+        "term": "Latency",
+        "detail": "Live record, not a replica"
+    },
+    {
+        "term": "Residency",
+        "detail": "Your tenant, your region"
+    }
+]

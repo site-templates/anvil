@@ -1,0 +1,29 @@
+title: Split close
+description: The full-bleed closing row — a black half and a voltage-yellow half, each a whole link
+fields:
+    leftHeading:
+        type: text
+        label: Left heading
+        default: "Book a demo"
+    leftBody:
+        type: textarea
+        label: Left paragraph
+        rows: 3
+        default: "Bring one process you dread. We will run it against a sandbox copy of your tenant and show you the ledger."
+    leftLink:
+        type: url
+        label: Left link
+        default: "/plans"
+    rightHeading:
+        type: text
+        label: Right heading
+        default: "Read the work"
+    rightBody:
+        type: textarea
+        label: Right paragraph
+        rows: 3
+        default: "Five runs written by the engineers who implemented these systems, with the numbers they actually moved."
+    rightLink:
+        type: url
+        label: Right link
+        default: "/use-cases"

@@ -1,0 +1,23 @@
+title: Manifesto
+description: The argument — a display heading beside a list of refusals, closed by one turned line
+fields:
+    heading:
+        type: text
+        label: Headline
+        default: "Most enterprise AI is a second opinion you still have to act on."
+    turn:
+        type: text
+        label: Closing line
+        description: The sentence that turns the list around.
+        default: "Anvil takes the action."
+    items:
+        type: repeater
+        label: Refusals
+        add_button_label: "Add line"
+        item_label: text
+        source: collections.refusals
+        sub_fields:
+            text:
+                type: text
+                label: Line
+                default: "You don't need another dashboard."

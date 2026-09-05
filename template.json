@@ -1,0 +1,20 @@
+{
+    "name": "Anvil",
+    "dialect": "blade",
+    "description": "A brutalist-editorial site for an enterprise AI-agent product — a floating white nav pill on warm gray, a condensed display headline beside a block-built mark, a live work ledger on black, a scroll-snap use-case rail, hairline plans, and a split black-and-voltage close.",
+    "icon": "◣",
+    "repo": "https://github.com/site-templates/anvil",
+    "order": 47,
+    "category": "landing",
+    "theme": "light",
+    "accent": "#fff100",
+    "pages": [
+        "Home",
+        "Platform",
+        "Use cases",
+        "Use case",
+        "Plans",
+        "Blog",
+        "Blog post"
+    ]
+}

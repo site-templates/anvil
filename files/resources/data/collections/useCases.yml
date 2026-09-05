@@ -1,0 +1,33 @@
+# Column types for useCases.json — the source of truth the builder reads.
+# Each entry is one run: the card on the homepage rail, the row on the index,
+# and its own page at /use-case/{slug}. The content column is rich text.
+fields:
+    slug:
+        type: text
+    system:
+        type: text
+    title:
+        type: text
+    blurb:
+        type: textarea
+    description:
+        type: textarea
+    metric:
+        type: text
+    metricWas:
+        type: text
+    owner:
+        type: text
+    runtime:
+        type: text
+    tone:
+        type: select
+        options:
+            mist: Mist
+            mint: Mint
+    linkText:
+        type: text
+    link:
+        type: url
+    content:
+        type: richtext

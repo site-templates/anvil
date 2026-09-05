@@ -1,0 +1,69 @@
+title: The ledger
+description: The signature — a live queue of back-office work being struck through and stamped, beside the cleared pile
+fields:
+    heading:
+        type: text
+        label: Headline
+        default: "The work, as it clears."
+    body:
+        type: textarea
+        label: Paragraph
+        rows: 3
+        default: "Every agent run lands in one ledger: what it touched, which rule it applied, who approved it. Nothing happens in your systems that is not a line here."
+    count:
+        type: number
+        label: Counter start
+        min: "0"
+        max: "999999"
+        step: "1"
+        default: "312"
+    countLabel:
+        type: text
+        label: Counter caption
+        default: "tickets closed since midnight"
+    queueLabel:
+        type: text
+        label: Left column heading
+        default: "In the queue"
+    clearedLabel:
+        type: text
+        label: Right column heading
+        default: "Cleared today"
+    queue:
+        type: repeater
+        label: Queued work
+        add_button_label: "Add queued row"
+        item_label: task
+        source: collections.ledgerQueue
+        sub_fields:
+            system:
+                type: text
+                label: System
+                default: "ERP"
+            task:
+                type: text
+                label: Task
+                default: "New task"
+            stamp:
+                type: text
+                label: Stamp
+                default: "Cleared"
+    cleared:
+        type: repeater
+        label: Cleared work
+        add_button_label: "Add cleared row"
+        item_label: task
+        source: collections.ledgerCleared
+        sub_fields:
+            system:
+                type: text
+                label: System
+                default: "ERP"
+            task:
+                type: text
+                label: Task
+                default: "New task"
+            stamp:
+                type: text
+                label: Stamp
+                default: "Cleared"

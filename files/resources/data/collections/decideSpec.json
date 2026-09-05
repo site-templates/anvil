@@ -1,0 +1,18 @@
+[
+    {
+        "term": "Rules",
+        "detail": "Yours, versioned, human-readable"
+    },
+    {
+        "term": "Exceptions",
+        "detail": "Named owner, evidence attached"
+    },
+    {
+        "term": "Model",
+        "detail": "Swappable; the ledger is not"
+    },
+    {
+        "term": "Drift",
+        "detail": "Flagged when inputs stop matching the rule"
+    }
+]

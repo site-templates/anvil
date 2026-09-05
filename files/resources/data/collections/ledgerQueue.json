@@ -1,0 +1,7 @@
+[
+    { "system": "ERP", "task": "Post 41 unposted journal entries for period 09", "stamp": "Cleared" },
+    { "system": "P2P", "task": "Match invoice INV-88421 against PO-5512", "stamp": "Cleared" },
+    { "system": "HCM", "task": "Approve 12 leave requests that sit inside policy", "stamp": "Cleared" },
+    { "system": "ITSM", "task": "Grant finance warehouse read access to 3 analysts", "stamp": "Cleared" },
+    { "system": "ERP", "task": "Reconcile intercompany balances for the APAC entities", "stamp": "Cleared" }
+]

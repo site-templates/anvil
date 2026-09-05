@@ -1,0 +1,84 @@
+# The visual editor's contract for footer.blade.php.
+# The link columns come from resources/data/site.json (footer_columns) and the
+# social links from social_links, so one edit changes every page.
+title: Footer
+description: The black close — oversized wordmark, mail address, four link columns, and the mono address block
+fields:
+    brand:
+        type: text
+        label: Wordmark
+        default: "Anvil"
+    contactLabel:
+        type: text
+        label: Contact line
+        default: "Questions about a rollout?"
+    emailLabel:
+        type: text
+        label: Email shown
+        default: "hello@anvil.example"
+    emailLink:
+        type: url
+        label: Email link
+        default: "mailto:hello@anvil.example"
+    copyright:
+        type: text
+        label: Copyright
+        default: "Anvil © 2026 · All rights reserved"
+    legalText:
+        type: text
+        label: Legal link text
+        default: "Privacy statement"
+    legalLink:
+        type: url
+        label: Legal link
+        default: "/blog"
+    address:
+        type: repeater
+        label: Address
+        add_button_label: "Add line"
+        item_label: text
+        source: site.address_lines
+        sub_fields:
+            text:
+                type: text
+                label: Line
+                default: "New line"
+    columns:
+        type: repeater
+        label: Link columns
+        add_button_label: "Add column"
+        item_label: text
+        nestable: true
+        source: site.footer_columns
+        sub_fields:
+            text:
+                type: text
+                label: Heading
+                default: "New column"
+            url:
+                type: url
+                label: Heading link
+                default: "/"
+    social:
+        type: repeater
+        label: Social links
+        add_button_label: "Add social link"
+        item_label: label
+        source: site.social_links
+        sub_fields:
+            label:
+                type: text
+                label: Name
+                default: "LinkedIn"
+            platform:
+                type: select
+                label: Icon
+                default: "linkedin"
+                options:
+                    x: X
+                    linkedin: LinkedIn
+                    youtube: YouTube
+            url:
+                type: url
+                label: Link
+                default: "#"

@@ -1,0 +1,17 @@
+[
+    {
+        "mark": "read",
+        "title": "Reads",
+        "body": "Live balances, open items, org structure, ticket history. Anvil answers from the record in your system, not from a warehouse copy that was correct last night."
+    },
+    {
+        "mark": "decide",
+        "title": "Decides",
+        "body": "Your close checklist, your approval matrix, your materiality thresholds. Anything outside them becomes an exception with the reasoning attached, not a guess."
+    },
+    {
+        "mark": "execute",
+        "title": "Executes",
+        "body": "Posts the entry, matches the invoice, grants the access, files the case. Every write is reversible, attributable and waiting on a named approver."
+    }
+]

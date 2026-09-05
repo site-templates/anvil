@@ -1,0 +1,6 @@
+[
+    { "system": "P2P", "task": "Held duplicate invoice INV-88190 before payment run", "stamp": "Cleared" },
+    { "system": "ERP", "task": "Closed the AP subledger for period 08", "stamp": "Cleared" },
+    { "system": "ITSM", "task": "Revoked 9 dormant accounts after the quarterly review", "stamp": "Cleared" },
+    { "system": "HCM", "task": "Filed 23 onboarding tasks for October starters", "stamp": "Cleared" }
+]
